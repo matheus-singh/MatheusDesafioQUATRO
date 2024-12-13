@@ -1,6 +1,5 @@
 package acc.br.DesafioQUATRO.controller;
 
-import acc.br.DesafioQUATRO.controller.requests.UserRegistrationRequest;
 import acc.br.DesafioQUATRO.repository.UserRepository;
 import acc.br.DesafioQUATRO.repository.entities.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
