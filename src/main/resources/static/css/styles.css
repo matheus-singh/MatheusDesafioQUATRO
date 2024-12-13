@@ -1,0 +1,301 @@
+/* Estilos gerais */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+body .ur-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  max-width: 650px;
+}
+
+/* Estilos da navbar */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #343a40;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Estilos da página home (studentsList.html) */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.button-group {
+  text-align: center;
+  margin: 20px;
+}
+
+.button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px; /* Aumentando o padding horizontal */
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* Estilos da página de confirmação (studentsConfirmation.html) */
+.confirmation-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+.confirmation-page .container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.confirmation-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.confirmation-message {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.student-details {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.student-details p {
+  margin: 10px 0;
+}
+
+.student-details h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-group form {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.confirmation-page .button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #45a049;
+}
+
+.edit-btn {
+  background-color: #FFA500;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e68a00;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #e0352f;
+}
+
+/* Estilos da página de cadastro (studentsRegistration.html) */
+.registration-page .container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.registration-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.registration-page .cancel-btn {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.registration-page .cancel-btn:hover {
+    background-color: #e2e2e2;
+}
+
+/* Estilos para a página de erro 404 */
+.error-404 {
+  text-align: center;
+  padding: 50px;
+}
+
+.error-404 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.error-404 p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.error-404 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.error-404 a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para a página de erro genérica */
+.error-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.error-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.error-page p {
+  font-size: 16px;
+  line-height: 1.5;
+}

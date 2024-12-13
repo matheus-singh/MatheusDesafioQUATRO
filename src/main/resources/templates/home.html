@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="navbar :: navbar"></div>
+
+<h1 style="text-align: center;">Lista de Estudantes</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Data de Nascimento</th>
+        <th>UF</th>
+        <th>Cidade</th>
+        <th>Logradouro</th>
+        <th>CEP</th>
+        <th>Curso</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iteração da lista de estudantes -->
+    <tr th:each="student : ${students}">
+        <td th:text="${student.name}"></td>
+        <td th:text="${student.birthDate}"></td>
+        <td th:text="${student.uf}"></td>
+        <td th:text="${student.city}"></td>
+        <td th:text="${student.street}"></td>
+        <td th:text="${student.cep}"></td>
+        <td th:text="${student.course}"></td>
+    </tr>
+    </tbody>
+</table>
+<!-- Botão para adicionar um novo estudante -->
+<div class="button-group">
+    <form action="/students/register" method="GET">
+        <button type="submit" class="add-btn">Cadastrar Novo Estudante</button>
+    </form>
+</div>
+</body>
+</html>
